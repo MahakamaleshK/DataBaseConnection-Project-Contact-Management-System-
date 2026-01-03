@@ -1,0 +1,768 @@
+2025-12-29 13:20:21,380 [contactmanager.DBConnection] INFO Database connection created. 
+2025-12-29 13:20:21,408 [contactmanager.UserAuth] INFO User login successful: kamalesh 
+2025-12-29 13:20:44,195 [contactmanager.DBConnection] INFO Database connection created. 
+2025-12-29 13:20:44,216 [contactmanager.DBConnection] INFO Database connection created. 
+2025-12-29 13:20:44,235 [contactmanager.DBConnection] INFO Database connection created. 
+2025-12-29 13:20:44,259 [contactmanager.AddContact] INFO Contact added for user 1 with mobile 1111111111 
+2025-12-29 13:58:54,327 [contactmanager.DBConnection] INFO Database connection created. 
+2025-12-29 13:58:54,355 [contactmanager.UserAuth] WARN Invalid login attempt for user: kamalesh 
+2025-12-29 13:58:59,882 [contactmanager.UserDAOImpl] ERROR Error validating user 
+java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1647)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1563)
+	at ADVANCED_JAVA/contactmanager.UserDAOImpl.validateUser(UserDAOImpl.java:58)
+	at ADVANCED_JAVA/contactmanager.UserAuth.signIn(UserAuth.java:50)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:37)
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.NativeSession.checkClosed(NativeSession.java:761)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:568)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1578)
+	... 4 more
+2025-12-29 13:58:59,883 [contactmanager.UserAuth] WARN Invalid login attempt for user: kamalesh 
+2025-12-29 13:59:09,258 [contactmanager.UserDAOImpl] ERROR Error checking username exists 
+java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1647)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1563)
+	at ADVANCED_JAVA/contactmanager.UserDAOImpl.usernameExists(UserDAOImpl.java:32)
+	at ADVANCED_JAVA/contactmanager.UserAuth.signUp(UserAuth.java:28)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:51)
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.NativeSession.checkClosed(NativeSession.java:761)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:568)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1578)
+	... 4 more
+2025-12-29 13:59:09,260 [contactmanager.UserDAOImpl] ERROR Error creating user 
+java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1647)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1563)
+	at ADVANCED_JAVA/contactmanager.UserDAOImpl.createUser(UserDAOImpl.java:45)
+	at ADVANCED_JAVA/contactmanager.UserAuth.signUp(UserAuth.java:32)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:51)
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.NativeSession.checkClosed(NativeSession.java:761)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:568)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1578)
+	... 4 more
+2025-12-29 13:59:09,260 [contactmanager.UserAuth] ERROR Failed to register user kamalesh 
+2025-12-29 15:02:50,755 [contactmanager.DBConnection] INFO Database connection created. 
+2025-12-29 15:02:50,778 [contactmanager.UserAuth] INFO User login successful: kamalesh 
+2025-12-29 15:03:25,029 [contactmanager.DBConnection] INFO Database connection created. 
+2025-12-29 15:03:25,046 [contactmanager.DBConnection] INFO Database connection created. 
+2025-12-29 15:03:25,061 [contactmanager.DBConnection] INFO Database connection created. 
+2025-12-29 15:03:25,079 [contactmanager.AddContact] INFO Contact added for user 1 with mobile 0978123456 
+2025-12-29 15:06:20,572 [contactmanager.DBConnection] INFO Database connection created. 
+2025-12-29 15:06:20,593 [contactmanager.UserAuth] INFO User login successful: kamalesh 
+2025-12-29 15:06:22,288 [contactmanager.DBConnection] INFO Database connection created. 
+2025-12-29 15:06:22,292 [contactmanager.ViewContact] INFO Displayed 11 contacts for user 1 
+2025-12-29 15:06:26,325 [contactmanager.DBConnection] INFO Database connection created. 
+2025-12-29 15:06:26,327 [contactmanager.ViewContact] INFO Displayed 11 contacts for user 1 
+2025-12-29 15:06:38,364 [contactmanager.DBConnection] INFO Database connection created. 
+2025-12-29 15:06:38,380 [contactmanager.DBConnection] INFO Database connection created. 
+2025-12-29 15:06:38,381 [contactmanager.DeleteContact] INFO Contact id 3 deleted by user 1 
+2025-12-29 15:06:40,789 [contactmanager.DBConnection] INFO Database connection created. 
+2025-12-29 15:06:40,792 [contactmanager.ViewContact] INFO Displayed 11 contacts for user 1 
+2025-12-29 15:07:00,008 [contactmanager.DBConnection] INFO Database connection created. 
+2025-12-29 15:07:00,011 [contactmanager.ViewContact] INFO Displayed 11 contacts for user 1 
+2025-12-29 15:07:05,670 [contactmanager.DBConnection] INFO Database connection created. 
+2025-12-29 15:07:05,683 [contactmanager.DBConnection] INFO Database connection created. 
+2025-12-29 15:07:05,684 [contactmanager.DeleteContact] INFO Contact id 3 deleted by user 1 
+2025-12-29 21:48:03,732 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 21:48:03,753 [contactmanager.UserAuth] INFO User login successful: kamalesh 
+2025-12-29 21:48:08,987 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 21:48:08,991 [contactmanager.ViewContact] INFO Displayed 11 contacts for user 1 
+2025-12-29 21:48:25,975 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 21:48:25,990 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 21:48:25,991 [contactmanager.DeleteContact] INFO Contact id 3 deleted by user 1 
+2025-12-29 21:48:29,122 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 21:48:29,125 [contactmanager.ViewContact] INFO Displayed 11 contacts for user 1 
+2025-12-29 23:30:26,438 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:30:26,489 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:30:26,510 [contactmanager.UserAuth] INFO New user registered: san 
+2025-12-29 23:30:31,794 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:30:31,795 [contactmanager.UserAuth] INFO User login successful: san 
+2025-12-29 23:30:51,195 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:30:51,197 [contactmanager.AddContact] WARN Duplicate mobile '1234567890' by user 1 
+2025-12-29 23:36:52,911 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:37:11,244 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:37:11,264 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:37:11,283 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:37:11,301 [contactmanager.AddContact] INFO Contact added successfully (userId=4, mobile=1234567890) 
+2025-12-29 23:37:51,389 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:37:51,408 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:37:51,422 [contactmanager.UserAuth] INFO New user registered: cherry 
+2025-12-29 23:37:57,535 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:38:10,164 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:38:10,180 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:38:10,194 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:38:10,211 [contactmanager.AddContact] INFO Contact added successfully (userId=5, mobile=1234567890) 
+2025-12-29 23:38:24,934 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:38:39,125 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:38:39,139 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:38:39,152 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:38:39,171 [contactmanager.AddContact] INFO Contact added successfully (userId=3, mobile=1234567890) 
+2025-12-29 23:39:03,015 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:39:09,184 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:39:09,186 [contactmanager.ViewContact] INFO Displayed 11 contacts for user 1 
+2025-12-29 23:39:13,401 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:39:13,413 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:39:13,431 [contactmanager.ContactDAOImpl] ERROR moveToTrash error 
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`ContactManagementSystem`.`trash`, CONSTRAINT `trash_ibfk_1` FOREIGN KEY (`contactId`) REFERENCES `contacts` (`contactId`))
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.moveToTrash(ContactDAOImpl.java:234)
+	at ADVANCED_JAVA/contactmanager.DeleteContact.deleteContactByIndex(DeleteContact.java:30)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:179)
+2025-12-29 23:39:13,431 [contactmanager.DeleteContact] ERROR Failed to delete contact id 3 
+2025-12-29 23:39:20,826 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:39:20,828 [contactmanager.ViewContact] INFO Displayed 11 contacts for user 1 
+2025-12-29 23:39:24,435 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:39:24,446 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:39:24,460 [contactmanager.ContactDAOImpl] ERROR moveToTrash error 
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`ContactManagementSystem`.`trash`, CONSTRAINT `trash_ibfk_1` FOREIGN KEY (`contactId`) REFERENCES `contacts` (`contactId`))
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.moveToTrash(ContactDAOImpl.java:234)
+	at ADVANCED_JAVA/contactmanager.DeleteContact.deleteContactByIndex(DeleteContact.java:30)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:179)
+2025-12-29 23:39:24,460 [contactmanager.DeleteContact] ERROR Failed to delete contact id 3 
+2025-12-29 23:40:51,690 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:41:13,620 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:41:13,626 [contactmanager.ViewContact] INFO Displayed 11 contacts for user 1 
+2025-12-29 23:41:20,558 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:41:20,561 [contactmanager.ViewContact] INFO Displayed 11 contacts for user 1 
+2025-12-29 23:41:26,009 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:41:26,029 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:41:26,047 [contactmanager.ContactDAOImpl] ERROR moveToTrash error 
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`ContactManagementSystem`.`trash`, CONSTRAINT `trash_ibfk_1` FOREIGN KEY (`contactId`) REFERENCES `contacts` (`contactId`))
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.moveToTrash(ContactDAOImpl.java:234)
+	at ADVANCED_JAVA/contactmanager.DeleteContact.deleteContactByIndex(DeleteContact.java:30)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:179)
+2025-12-29 23:41:26,048 [contactmanager.DeleteContact] ERROR Failed to delete contact id 3 
+2025-12-29 23:46:10,073 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:46:13,488 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:46:13,494 [contactmanager.ViewContact] INFO Displayed 11 contacts for user 1 
+2025-12-29 23:46:17,347 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:46:17,366 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:46:17,381 [contactmanager.ContactDAOImpl] ERROR moveToTrash error 
+java.sql.SQLException: Data truncated for column 'status' at row 1
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.moveToTrash(ContactDAOImpl.java:240)
+	at ADVANCED_JAVA/contactmanager.DeleteContact.deleteContactByIndex(DeleteContact.java:30)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:179)
+2025-12-29 23:46:17,382 [contactmanager.DeleteContact] ERROR Failed to delete contact id 3 
+2025-12-29 23:50:55,883 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:50:57,719 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:50:57,724 [contactmanager.ViewContact] INFO Displayed 11 contacts for user 1 
+2025-12-29 23:51:00,818 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:51:00,840 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:51:00,856 [contactmanager.DeleteContact] INFO Contact id 3 deleted by user 1 
+2025-12-29 23:51:04,176 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:51:04,179 [contactmanager.ViewContact] INFO Displayed 10 contacts for user 1 
+2025-12-29 23:53:41,049 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:53:41,052 [contactmanager.ViewContact] INFO Displayed 10 contacts for user 1 
+2025-12-29 23:53:45,894 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:53:45,896 [contactmanager.ViewContact] INFO Displayed 10 contacts for user 1 
+2025-12-29 23:54:09,037 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:54:09,055 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:54:09,076 [contactmanager.UpdateContact] INFO Additional details updated (id=6, userId=1) 
+2025-12-29 23:54:11,534 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:54:11,536 [contactmanager.ViewContact] INFO Displayed 10 contacts for user 1 
+2025-12-29 23:54:19,880 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:54:34,185 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:54:36,989 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:54:52,400 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:54:54,748 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:55:04,328 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:55:11,219 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:55:14,706 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:55:16,558 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:55:42,047 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:55:48,694 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:55:48,707 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:55:48,720 [contactmanager.UserAuth] INFO New user registered: admin 
+2025-12-29 23:55:53,902 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:55:59,300 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:56:03,616 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:56:06,070 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:56:06,082 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:56:06,096 [contactmanager.Admin] INFO Recovered contact hello 0987612345 for user 1 
+2025-12-29 23:56:13,404 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:56:22,388 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:56:22,390 [contactmanager.ViewContact] INFO No contacts found for user 6 
+2025-12-29 23:56:33,221 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:56:36,252 [contactmanager.DBConnection] INFO Database connection established 
+2025-12-29 23:56:36,253 [contactmanager.ViewContact] INFO Displayed 10 contacts for user 1 
+2025-12-30 00:37:04,749 [contactmanager.ViewContact] INFO Displayed 10 contacts for user 1 
+2025-12-30 00:39:17,310 [contactmanager.ViewContact] INFO Displayed 11 contacts for user 1 
+2025-12-30 00:46:46,645 [contactmanager.ViewContact] INFO Displayed 11 contacts for user 1 
+2025-12-30 00:46:50,692 [contactmanager.DeleteContact] INFO Contact id 3 deleted by user 1 
+2025-12-30 00:46:52,573 [contactmanager.ViewContact] INFO Displayed 10 contacts for user 1 
+2025-12-30 00:47:33,256 [contactmanager.Admin] INFO Recovered contact hello 0987612345 for user 1 
+2025-12-30 00:47:52,841 [contactmanager.ViewContact] INFO Displayed 11 contacts for user 1 
+2025-12-30 00:50:17,869 [contactmanager.ViewContact] INFO Displayed 11 contacts for user 1 
+2025-12-30 00:50:21,078 [contactmanager.DeleteContact] INFO Contact id 3 deleted by user 1 
+2025-12-30 00:50:47,837 [contactmanager.Admin] INFO Recovered contact hello 0987612345 for user 1 
+2025-12-30 09:55:31,674 [contactmanager.ViewContact] INFO Displayed 11 contacts for user 1 
+2025-12-30 09:55:35,455 [contactmanager.DeleteContact] INFO Contact id 3 deleted by user 1 
+2025-12-30 09:55:38,612 [contactmanager.ViewContact] INFO Displayed 10 contacts for user 1 
+2025-12-30 10:18:32,264 [contactmanager.UserAuth] INFO New user registered: rani 
+2025-12-30 10:18:41,432 [contactmanager.ViewContact] INFO No contacts found for user 7 
+2025-12-30 10:18:43,587 [contactmanager.ViewContact] INFO No contacts found for user 7 
+2025-12-30 12:25:18,206 [contactmanager.DBConnection] INFO Connection created... 
+2025-12-30 13:15:18,284 [contactmanager.AddContact] INFO Contact added successfully (userId=1, mobile=1230984576) 
+2025-12-30 13:15:54,263 [contactmanager.AddContact] INFO Contact added successfully (userId=2, mobile=1230984576) 
+2025-12-30 13:15:58,037 [contactmanager.ViewContact] INFO Displayed 1 contacts for user 2 
+2025-12-30 13:16:21,497 [contactmanager.AddContact] INFO Contact added successfully (userId=6, mobile=0987654321) 
+2025-12-30 13:16:24,423 [contactmanager.ViewContact] INFO Displayed 1 contacts for user 6 
+2025-12-30 23:48:37,227 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-30 23:48:53,693 [contactmanager.AddContact] WARN Invalid mobile '' by user 1 
+2025-12-30 23:49:20,493 [contactmanager.AddContact] INFO Contact added successfully (userId=1, mobile=0912384576) 
+2025-12-30 23:49:24,149 [contactmanager.ViewContact] INFO Displayed 12 contacts for user 1 
+2025-12-30 23:49:48,664 [contactmanager.ViewContact] INFO Displayed 12 contacts for user 1 
+2025-12-30 23:50:10,934 [contactmanager.DBConnection] INFO Database Connection closed! 
+2025-12-30 23:54:18,701 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-30 23:54:18,741 [contactmanager.UserAuth] INFO New user registered: cherrycherry 
+2025-12-30 23:54:38,044 [contactmanager.AddContact] INFO Contact added successfully (userId=8, mobile=1234567890) 
+2025-12-30 23:55:00,479 [contactmanager.AddContact] INFO Contact added successfully (userId=8, mobile=0987654321) 
+2025-12-30 23:55:02,741 [contactmanager.ViewContact] INFO Displayed 2 contacts for user 8 
+2025-12-30 23:55:29,687 [contactmanager.EditContact] INFO Contact updated (id=20, userId=8) 
+2025-12-30 23:55:33,524 [contactmanager.ViewContact] INFO Displayed 2 contacts for user 8 
+2025-12-30 23:55:37,392 [contactmanager.ViewContact] INFO Displayed 2 contacts for user 8 
+2025-12-30 23:55:58,811 [contactmanager.UpdateContact] INFO Additional details updated (id=19, userId=8) 
+2025-12-30 23:56:00,764 [contactmanager.ViewContact] INFO Displayed 2 contacts for user 8 
+2025-12-30 23:57:43,061 [contactmanager.DBConnection] INFO Database Connection closed! 
+2025-12-31 11:02:59,951 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 11:02:59,983 [contactmanager.UserAuth] INFO New user registered 
+2025-12-31 11:03:48,910 [contactmanager.AddContact] INFO Contact added successfully (userId=9, mobile=0987654321) 
+2025-12-31 11:11:44,030 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 11:11:53,323 [contactmanager.ContactDAOImpl] ERROR getDeletedContactsGroupedByOwner error 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'trash t ON c.contactId = t.contactId ORDER BY c.userId' at line 1
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.getDeletedContactsGroupedByOwner(ContactDAOImpl.java:242)
+	at ADVANCED_JAVA/contactmanager.Admin.viewAllDeletedGrouped(Admin.java:21)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.adminMenu(ContactManagementSystem.java:226)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:162)
+2025-12-31 11:13:29,882 [contactmanager.AddContact] WARN Invalid mobile '' by user 6 
+2025-12-31 11:13:38,741 [contactmanager.AddContact] INFO Contact added successfully (userId=6, mobile=1234567890) 
+2025-12-31 11:13:42,805 [contactmanager.ViewContact] INFO Displayed 2 contacts for user 6 
+2025-12-31 11:13:47,537 [contactmanager.DeleteContact] INFO Contact id 22 deleted by user 6 
+2025-12-31 11:13:58,664 [contactmanager.ContactDAOImpl] ERROR getDeletedContactsGroupedByOwner error 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'trash t ON c.contactId = t.contactId ORDER BY c.userId' at line 1
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.getDeletedContactsGroupedByOwner(ContactDAOImpl.java:242)
+	at ADVANCED_JAVA/contactmanager.Admin.viewAllDeletedGrouped(Admin.java:21)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.adminMenu(ContactManagementSystem.java:226)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:162)
+2025-12-31 11:15:53,892 [contactmanager.ContactDAOImpl] ERROR getDeletedContactsGroupedByOwner error 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'trash t ON c.contactId = t.contactId ORDER BY c.userId' at line 1
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.getDeletedContactsGroupedByOwner(ContactDAOImpl.java:242)
+	at ADVANCED_JAVA/contactmanager.Admin.viewAllDeletedGrouped(Admin.java:21)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.adminMenu(ContactManagementSystem.java:228)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:162)
+2025-12-31 11:15:56,701 [contactmanager.Admin] INFO Recovered contact kamalesh k for user 6 
+2025-12-31 11:24:23,299 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 11:24:27,421 [contactmanager.ContactDAOImpl] ERROR getDeletedContactsGroupedByOwner error 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'trash t ON c.contactId = t.contactId ORDER BY c.userId' at line 1
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.getDeletedContactsGroupedByOwner(ContactDAOImpl.java:242)
+	at ADVANCED_JAVA/contactmanager.Admin.viewAllDeletedGrouped(Admin.java:21)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.adminMenu(ContactManagementSystem.java:226)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:162)
+2025-12-31 11:24:29,579 [contactmanager.ContactDAOImpl] ERROR getDeletedContactsGroupedByOwner error 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'trash t ON c.contactId = t.contactId ORDER BY c.userId' at line 1
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.getDeletedContactsGroupedByOwner(ContactDAOImpl.java:242)
+	at ADVANCED_JAVA/contactmanager.Admin.viewAllDeletedGrouped(Admin.java:21)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.adminMenu(ContactManagementSystem.java:228)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:162)
+2025-12-31 11:24:31,293 [contactmanager.Admin] INFO Recovered contact hello 0987612345 for user 1 
+2025-12-31 11:24:37,782 [contactmanager.ContactDAOImpl] ERROR getDeletedContactsGroupedByOwner error 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'trash t ON c.contactId = t.contactId ORDER BY c.userId' at line 1
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.getDeletedContactsGroupedByOwner(ContactDAOImpl.java:242)
+	at ADVANCED_JAVA/contactmanager.Admin.viewAllDeletedGrouped(Admin.java:21)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.adminMenu(ContactManagementSystem.java:228)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:162)
+2025-12-31 11:24:50,952 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 11:24:55,580 [contactmanager.ContactDAOImpl] ERROR getDeletedContactsGroupedByOwner error 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'trash t ON c.contactId = t.contactId ORDER BY c.userId' at line 1
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.getDeletedContactsGroupedByOwner(ContactDAOImpl.java:242)
+	at ADVANCED_JAVA/contactmanager.Admin.viewAllDeletedGrouped(Admin.java:21)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.adminMenu(ContactManagementSystem.java:228)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:162)
+2025-12-31 12:19:23,444 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 12:20:53,016 [contactmanager.UserAuth] INFO New user registered 
+2025-12-31 12:21:09,286 [contactmanager.AddContact] WARN Invalid mobile '' by user 10 
+2025-12-31 12:21:19,736 [contactmanager.AddContact] INFO Contact added successfully (userId=10, mobile=1234567890) 
+2025-12-31 12:21:29,486 [contactmanager.AddContact] WARN Invalid mobile '' by user 10 
+2025-12-31 12:21:37,729 [contactmanager.AddContact] WARN Invalid mobile '087654321' by user 10 
+2025-12-31 12:21:54,232 [contactmanager.AddContact] INFO Contact added successfully (userId=10, mobile=0987654321) 
+2025-12-31 12:22:02,621 [contactmanager.AddContact] INFO Contact added successfully (userId=10, mobile=1234509876) 
+2025-12-31 12:22:13,627 [contactmanager.AddContact] INFO Contact added successfully (userId=10, mobile=0987612345) 
+2025-12-31 12:22:43,080 [contactmanager.AddContact] INFO Contact added successfully (userId=10, mobile=6789543210) 
+2025-12-31 12:22:58,174 [contactmanager.AddContact] INFO Contact added successfully (userId=10, mobile=0987543216) 
+2025-12-31 12:23:00,082 [contactmanager.ViewContact] INFO Displayed 6 contacts for user 10 
+2025-12-31 12:23:33,835 [contactmanager.ViewContact] INFO Displayed 6 contacts for user 10 
+2025-12-31 12:24:29,112 [contactmanager.ContactDAOImpl] ERROR moveToTrash error 
+com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.moveToTrash(ContactDAOImpl.java:218)
+	at ADVANCED_JAVA/contactmanager.DeleteContact.deleteContactByIndex(DeleteContact.java:30)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:179)
+2025-12-31 12:24:29,113 [contactmanager.DeleteContact] ERROR Failed to delete contact id 26 
+2025-12-31 12:24:44,834 [contactmanager.ViewContact] INFO Displayed 6 contacts for user 10 
+2025-12-31 12:24:55,641 [contactmanager.ViewContact] INFO Displayed 6 contacts for user 10 
+2025-12-31 12:25:50,325 [contactmanager.ContactDAOImpl] ERROR moveToTrash error 
+com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.moveToTrash(ContactDAOImpl.java:218)
+	at ADVANCED_JAVA/contactmanager.DeleteContact.deleteContactByIndex(DeleteContact.java:30)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:179)
+2025-12-31 12:25:50,327 [contactmanager.DeleteContact] ERROR Failed to delete contact id 26 
+2025-12-31 12:26:15,178 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 12:26:20,794 [contactmanager.ViewContact] INFO Displayed 6 contacts for user 10 
+2025-12-31 12:26:54,344 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 12:26:56,451 [contactmanager.ViewContact] INFO Displayed 6 contacts for user 10 
+2025-12-31 12:27:15,638 [contactmanager.ContactDAOImpl] ERROR moveToTrash error 
+com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.moveToTrash(ContactDAOImpl.java:218)
+	at ADVANCED_JAVA/contactmanager.DeleteContact.deleteContactByIndex(DeleteContact.java:30)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:179)
+2025-12-31 12:27:15,640 [contactmanager.DeleteContact] ERROR Failed to delete contact id 26 
+2025-12-31 12:27:49,865 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 12:27:50,646 [contactmanager.ContactDAOImpl] ERROR moveToTrash error 
+com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.moveToTrash(ContactDAOImpl.java:218)
+	at ADVANCED_JAVA/contactmanager.DeleteContact.deleteContactByIndex(DeleteContact.java:30)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:179)
+2025-12-31 12:27:50,647 [contactmanager.DeleteContact] ERROR Failed to delete contact id 26 
+2025-12-31 12:27:51,755 [contactmanager.ViewContact] INFO Displayed 6 contacts for user 10 
+2025-12-31 12:28:43,871 [contactmanager.ContactDAOImpl] ERROR moveToTrash error 
+com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.moveToTrash(ContactDAOImpl.java:218)
+	at ADVANCED_JAVA/contactmanager.DeleteContact.deleteContactByIndex(DeleteContact.java:30)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:179)
+2025-12-31 12:28:43,873 [contactmanager.DeleteContact] ERROR Failed to delete contact id 26 
+2025-12-31 13:08:22,731 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 13:08:25,909 [contactmanager.ViewContact] INFO Displayed 6 contacts for user 10 
+2025-12-31 13:12:02,123 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 13:12:04,646 [contactmanager.ViewContact] INFO Displayed 6 contacts for user 10 
+2025-12-31 13:12:58,396 [contactmanager.ContactDAOImpl] ERROR moveToTrash error 
+com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.moveToTrash(ContactDAOImpl.java:218)
+	at ADVANCED_JAVA/contactmanager.DeleteContact.deleteContactByIndex(DeleteContact.java:30)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:179)
+2025-12-31 13:12:58,397 [contactmanager.DeleteContact] ERROR Failed to delete contact id 26 
+2025-12-31 13:13:44,829 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 13:13:47,432 [contactmanager.ViewContact] INFO Displayed 6 contacts for user 10 
+2025-12-31 13:14:40,022 [contactmanager.ContactDAOImpl] ERROR moveToTrash error 
+com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.moveToTrash(ContactDAOImpl.java:218)
+	at ADVANCED_JAVA/contactmanager.DeleteContact.deleteContactByIndex(DeleteContact.java:31)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:179)
+2025-12-31 13:14:40,023 [contactmanager.DeleteContact] ERROR Failed to delete contact id 26 
+2025-12-31 13:17:07,919 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 13:17:09,864 [contactmanager.ViewContact] INFO Displayed 6 contacts for user 10 
+2025-12-31 13:18:04,111 [contactmanager.ContactDAOImpl] ERROR moveToTrash error 
+com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.moveToTrash(ContactDAOImpl.java:218)
+	at ADVANCED_JAVA/contactmanager.DeleteContact.deleteContactByIndex(DeleteContact.java:31)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:179)
+2025-12-31 13:18:04,113 [contactmanager.DeleteContact] ERROR Failed to delete contact id 26 
+2025-12-31 13:23:02,305 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 13:23:05,824 [contactmanager.ViewContact] INFO Displayed 6 contacts for user 10 
+2025-12-31 13:23:31,821 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 13:24:29,280 [contactmanager.ContactDAOImpl] ERROR recoverDeletedContact error 
+com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.recoverDeletedContact(ContactDAOImpl.java:282)
+	at ADVANCED_JAVA/contactmanager.Admin.recoverContactByPosition(Admin.java:66)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.adminMenu(ContactManagementSystem.java:232)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:162)
+2025-12-31 13:24:29,283 [contactmanager.Admin] ERROR Failed to recover contact id 6 
+2025-12-31 15:16:28,369 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 15:16:32,179 [contactmanager.ViewContact] INFO Displayed 6 contacts for user 10 
+2025-12-31 15:17:28,596 [contactmanager.ContactDAOImpl] ERROR moveToTrash error 
+com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.moveToTrash(ContactDAOImpl.java:218)
+	at ADVANCED_JAVA/contactmanager.DeleteContact.deleteContactByIndex(DeleteContact.java:31)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:179)
+2025-12-31 15:17:28,598 [contactmanager.DeleteContact] ERROR Failed to delete contact id 26 
+2025-12-31 15:20:20,366 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 15:20:23,152 [contactmanager.ViewContact] INFO Displayed 6 contacts for user 10 
+2025-12-31 15:21:16,384 [contactmanager.ContactDAOImpl] ERROR moveToTrash error 
+java.sql.SQLNonTransientConnectionException: Can't call rollback when autocommit=true
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ConnectionImpl.rollback(ConnectionImpl.java:1820)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.moveToTrash(ContactDAOImpl.java:228)
+	at ADVANCED_JAVA/contactmanager.DeleteContact.deleteContactByIndex(DeleteContact.java:31)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:179)
+2025-12-31 15:21:16,386 [contactmanager.DeleteContact] ERROR Failed to delete contact id 26 
+2025-12-31 15:22:06,500 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 15:22:08,464 [contactmanager.ViewContact] INFO Displayed 6 contacts for user 10 
+2025-12-31 15:22:20,199 [contactmanager.ViewContact] INFO Displayed 6 contacts for user 10 
+2025-12-31 15:23:13,188 [contactmanager.ContactDAOImpl] ERROR moveToTrash error 
+com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.moveToTrash(ContactDAOImpl.java:218)
+	at ADVANCED_JAVA/contactmanager.DeleteContact.deleteContactByIndex(DeleteContact.java:31)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:179)
+2025-12-31 15:23:13,190 [contactmanager.DeleteContact] ERROR Failed to delete contact id 26 
+2025-12-31 15:25:01,121 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 15:25:05,314 [contactmanager.ViewContact] INFO Displayed 6 contacts for user 10 
+2025-12-31 15:25:58,344 [contactmanager.ContactDAOImpl] ERROR moveToTrash error 
+com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.moveToTrash(ContactDAOImpl.java:222)
+	at ADVANCED_JAVA/contactmanager.DeleteContact.deleteContactByIndex(DeleteContact.java:31)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:179)
+2025-12-31 15:25:58,345 [contactmanager.DeleteContact] ERROR Failed to delete contact id 26 
+2025-12-31 15:26:32,054 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 15:26:34,332 [contactmanager.ViewContact] INFO Displayed 6 contacts for user 10 
+2025-12-31 15:27:26,521 [contactmanager.ContactDAOImpl] ERROR moveToTrash error 
+com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at mysql.connector.j@8.0.31 1/com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at ADVANCED_JAVA/contactmanager.ContactDAOImpl.moveToTrash(ContactDAOImpl.java:222)
+	at ADVANCED_JAVA/contactmanager.DeleteContact.deleteContactByIndex(DeleteContact.java:31)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:179)
+2025-12-31 15:27:26,523 [contactmanager.DeleteContact] ERROR Failed to delete contact id 26 
+2025-12-31 15:28:48,052 [contactmanager.AddContact] INFO Contact added successfully (userId=10, mobile=0987651234) 
+2025-12-31 15:29:00,551 [contactmanager.ViewContact] INFO Displayed 7 contacts for user 10 
+2025-12-31 15:43:39,027 [contactmanager.DBConnection] INFO Database Connection closed! 
+2025-12-31 15:43:53,645 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 15:43:55,188 [contactmanager.DBConnection] INFO Database Connection closed! 
+2025-12-31 15:45:21,208 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 15:45:28,551 [contactmanager.ViewContact] INFO Displayed 7 contacts for user 10 
+2025-12-31 15:45:31,885 [contactmanager.DeleteContact] INFO Contact id 26 deleted by user 10 
+2025-12-31 15:46:31,608 [contactmanager.Admin] INFO Recovered contact kamalesh k for user 6 
+2025-12-31 15:46:48,382 [contactmanager.DBConnection] INFO Database Connection closed! 
+2025-12-31 15:48:52,144 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 15:48:54,668 [contactmanager.ViewContact] INFO Displayed 6 contacts for user 10 
+2025-12-31 15:49:07,404 [contactmanager.AddContact] INFO Contact added successfully (userId=10, mobile=1111111111) 
+2025-12-31 15:49:16,196 [contactmanager.ViewContact] INFO Displayed 7 contacts for user 10 
+2025-12-31 15:49:37,939 [contactmanager.AddContact] INFO Contact added successfully (userId=10, mobile=0000000000) 
+2025-12-31 15:49:39,770 [contactmanager.ViewContact] INFO Displayed 8 contacts for user 10 
+2025-12-31 17:30:33,611 [contactmanager.DBConnection] INFO Database Connection closed! 
+2025-12-31 17:32:51,324 [contactmanager.DBConnection] INFO Database Connection created... 
+2025-12-31 17:32:53,446 [contactmanager.ViewContact] INFO Displayed 8 contacts for user 10 
+2025-12-31 17:32:57,947 [contactmanager.DeleteContact] INFO Contact id 25 deleted by user 10 
+2025-12-31 17:33:23,988 [contactmanager.Admin] INFO Recovered contact cherrycherry c for user 10 
+2025-12-31 17:33:26,414 [contactmanager.Admin] INFO Recovered contact cherry c for user 10 
+2025-12-31 17:33:47,462 [contactmanager.ViewContact] INFO Displayed 9 contacts for user 10 
+2026-01-01 22:28:20,133 [contactmanager.DBConnection] INFO Database Connection closed! 
+2026-01-02 00:50:08,774 [contactmanager.DBConnection] INFO Database Connection created... 
+2026-01-02 00:50:08,776 [contactmanager.DBConnection] INFO Database Connection closed! 
+2026-01-02 00:50:40,254 [contactmanager.DBConnection] INFO Database Connection created... 
+2026-01-02 00:50:42,536 [contactmanager.DBConnection] INFO Database Connection closed! 
+2026-01-02 12:20:26,755 [contactmanager.DBConnection] INFO Database Connection created... 
+2026-01-02 12:20:28,418 [contactmanager.ViewContact] INFO Displayed 9 contacts for user 10 
+2026-01-02 12:25:37,482 [contactmanager.DBConnection] INFO Database Connection closed! 
+2026-01-02 12:43:34,150 [contactmanager.DBConnection] INFO Database Connection created... 
+2026-01-02 14:28:02,378 [contactmanager.DBConnection] INFO Database Connection created... 
+2026-01-02 14:28:02,427 [contactmanager.UserAuth] INFO New user registered 
+2026-01-02 14:28:11,095 [contactmanager.DBConnection] INFO Database Connection closed! 
+2026-01-02 16:56:30,865 [contactmanager.DBConnection] INFO Database Connection created... 
+2026-01-02 16:56:51,145 [contactmanager.AddContact] WARN Invalid mobile '09875431' by user 11 
+2026-01-02 16:57:12,047 [contactmanager.AddContact] INFO Contact added successfully (userId=11, mobile=1234567890) 
+2026-01-02 16:57:14,372 [contactmanager.ViewContact] INFO Displayed 1 contacts for user 11 
+2026-01-02 16:57:22,035 [contactmanager.ViewContact] INFO Displayed 1 contacts for user 11 
+2026-01-02 16:57:32,693 [contactmanager.UpdateContact] INFO Additional details updated (id=32, userId=11) 
+2026-01-02 16:57:37,406 [contactmanager.ViewContact] INFO Displayed 1 contacts for user 11 
+2026-01-02 16:59:42,954 [contactmanager.DBConnection] INFO Database Connection created... 
+2026-01-02 16:59:44,231 [contactmanager.DBConnection] INFO Database Connection closed! 
+2026-01-02 18:07:46,466 [contactmanager.DBConnection] ERROR Failed to connect to DataBase 
+java.io.FileNotFoundException: config/dg.config (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at ADVANCED_JAVA/contactmanager.DBConnection.<init>(DBConnection.java:23)
+	at ADVANCED_JAVA/contactmanager.DBConnection.getInstance(DBConnection.java:36)
+	at ADVANCED_JAVA/contactmanager.UserDAOImpl.validateUserAndGetId(UserDAOImpl.java:59)
+	at ADVANCED_JAVA/contactmanager.UserAuth.signIn(UserAuth.java:58)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:37)
+2026-01-02 18:09:39,898 [contactmanager.DBConnection] ERROR Failed to connect to DataBase 
+java.io.FileNotFoundException: config/dg.config (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at ADVANCED_JAVA/contactmanager.DBConnection.<init>(DBConnection.java:23)
+	at ADVANCED_JAVA/contactmanager.DBConnection.getInstance(DBConnection.java:38)
+	at ADVANCED_JAVA/contactmanager.UserDAOImpl.validateUserAndGetId(UserDAOImpl.java:59)
+	at ADVANCED_JAVA/contactmanager.UserAuth.signIn(UserAuth.java:58)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:37)
+2026-01-02 18:11:23,028 [contactmanager.DBConnection] ERROR Failed to connect to DataBase 
+java.io.FileNotFoundException: dg.config (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at ADVANCED_JAVA/contactmanager.DBConnection.<init>(DBConnection.java:23)
+	at ADVANCED_JAVA/contactmanager.DBConnection.getInstance(DBConnection.java:38)
+	at ADVANCED_JAVA/contactmanager.UserDAOImpl.validateUserAndGetId(UserDAOImpl.java:59)
+	at ADVANCED_JAVA/contactmanager.UserAuth.signIn(UserAuth.java:58)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:37)
+2026-01-02 18:14:30,890 [contactmanager.DBConnection] ERROR Failed to connect to DataBase 
+java.io.FileNotFoundException: config/dg.config (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at ADVANCED_JAVA/contactmanager.DBConnection.<init>(DBConnection.java:23)
+	at ADVANCED_JAVA/contactmanager.DBConnection.getInstance(DBConnection.java:38)
+	at ADVANCED_JAVA/contactmanager.UserDAOImpl.validateUserAndGetId(UserDAOImpl.java:59)
+	at ADVANCED_JAVA/contactmanager.UserAuth.signIn(UserAuth.java:58)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:37)
+2026-01-02 18:14:55,597 [contactmanager.DBConnection] ERROR Failed to connect to DataBase 
+java.io.FileNotFoundException: config/dg.config (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at ADVANCED_JAVA/contactmanager.DBConnection.<init>(DBConnection.java:23)
+	at ADVANCED_JAVA/contactmanager.DBConnection.getInstance(DBConnection.java:38)
+	at ADVANCED_JAVA/contactmanager.UserDAOImpl.validateUserAndGetId(UserDAOImpl.java:59)
+	at ADVANCED_JAVA/contactmanager.UserAuth.signIn(UserAuth.java:58)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:37)
+2026-01-02 18:15:52,172 [contactmanager.DBConnection] ERROR Failed to connect to DataBase 
+java.io.FileNotFoundException: config/dg.config (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at ADVANCED_JAVA/contactmanager.DBConnection.<init>(DBConnection.java:23)
+	at ADVANCED_JAVA/contactmanager.DBConnection.getInstance(DBConnection.java:38)
+	at ADVANCED_JAVA/contactmanager.UserDAOImpl.validateUserAndGetId(UserDAOImpl.java:59)
+	at ADVANCED_JAVA/contactmanager.UserAuth.signIn(UserAuth.java:58)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:37)
+2026-01-02 18:16:17,159 [contactmanager.DBConnection] ERROR Failed to connect to DataBase 
+java.io.FileNotFoundException: config/dg.config (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at ADVANCED_JAVA/contactmanager.DBConnection.<init>(DBConnection.java:23)
+	at ADVANCED_JAVA/contactmanager.DBConnection.getInstance(DBConnection.java:38)
+	at ADVANCED_JAVA/contactmanager.UserDAOImpl.validateUserAndGetId(UserDAOImpl.java:59)
+	at ADVANCED_JAVA/contactmanager.UserAuth.signIn(UserAuth.java:58)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:37)
+2026-01-02 18:21:09,158 [contactmanager.DBConnection] ERROR Failed to connect to DataBase 
+java.io.FileNotFoundException: config/dg.config (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+	at ADVANCED_JAVA/contactmanager.DBConnection.<init>(DBConnection.java:23)
+	at ADVANCED_JAVA/contactmanager.DBConnection.getInstance(DBConnection.java:38)
+	at ADVANCED_JAVA/contactmanager.UserDAOImpl.validateUserAndGetId(UserDAOImpl.java:59)
+	at ADVANCED_JAVA/contactmanager.UserAuth.signIn(UserAuth.java:58)
+	at ADVANCED_JAVA/contactmanager.ContactManagementSystem.main(ContactManagementSystem.java:37)
+2026-01-02 18:24:23,785 [contactmanager.DBConnection] INFO Database Connection created... 
+2026-01-02 18:24:34,763 [contactmanager.DBConnection] INFO Database Connection closed! 
+2026-01-02 18:26:23,273 [contactmanager.DBConnection] INFO Database Connection created... 
+2026-01-02 18:26:36,719 [contactmanager.DBConnection] INFO Database Connection closed! 
+2026-01-02 18:28:00,614 [DBConnection] INFO Database Connection created... 
+2026-01-02 18:28:00,665 [UserAuth] INFO New user registered 
+2026-01-02 18:28:07,469 [DBConnection] INFO Database Connection closed! 
+2026-01-03 10:51:17,140 [DBConnection] INFO Database Connection created... 
+2026-01-03 10:51:29,453 [Operations] INFO Contact added successfully (userId=10, mobile=0978653421) 
+2026-01-03 10:51:31,296 [Operations] INFO Displayed 10 contacts for user 10 
+2026-01-03 10:51:43,484 [DBConnection] INFO Database Connection closed! 
+2026-01-03 11:29:41,373 [DBConnection] INFO Database Connection created... 
+2026-01-03 11:29:41,424 [UserAuth] INFO New user registered 
+2026-01-03 11:30:25,570 [Operations] WARN Empty name attempted by user 13 
+2026-01-03 11:31:03,030 [Operations] INFO Contact added successfully (userId=13, mobile=9629694482) 
+2026-01-03 11:31:17,364 [Operations] INFO Displayed 1 contacts for user 13 
+2026-01-03 11:31:51,799 [Operations] INFO Contact updated (id=34, userId=13) 
+2026-01-03 11:31:55,182 [Operations] INFO Displayed 1 contacts for user 13 
+2026-01-03 11:32:01,592 [Operations] INFO Displayed 1 contacts for user 13 
+2026-01-03 11:32:53,839 [Operations] INFO Additional details updated (id=34, userId=13) 
+2026-01-03 11:32:58,037 [Operations] INFO Displayed 1 contacts for user 13 
+2026-01-03 11:34:27,393 [Operations] INFO Displayed 1 contacts for user 13 
+2026-01-03 11:34:34,676 [Operations] INFO Contact id 34 deleted by user 13 
+2026-01-03 11:34:37,837 [Operations] INFO No contacts found for user 13 
+2026-01-03 11:34:51,048 [UserAuth] INFO New user registered 
+2026-01-03 11:35:44,482 [Admin] INFO Recovered contact Lubi Xavier for user 13 
+2026-01-03 11:36:22,715 [Operations] INFO Displayed 1 contacts for user 13 
+2026-01-03 11:40:59,128 [DBConnection] INFO Database Connection closed! 
+2026-01-03 12:36:18,781 [DBConnection] INFO Database Connection created... 
+2026-01-03 12:39:08,179 [Operations] INFO Contact added successfully (userId=14, mobile=1234567890) 
+2026-01-03 12:39:10,224 [Operations] INFO Displayed 1 contacts for user 14 
+2026-01-03 12:39:13,879 [DBConnection] INFO Database Connection closed! 
